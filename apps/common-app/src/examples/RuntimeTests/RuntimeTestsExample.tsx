@@ -54,6 +54,12 @@ export default function RuntimeTestsExample() {
           },
         },
         {
+          testSuiteName: 'props',
+          importTest: () => {
+            requestAnimationFrame('./tests/props/boxShadow.test');
+          },
+        },
+        {
           testSuiteName: 'utilities',
           importTest: () => {
             require('./tests/utilities/relativeCoords.test');
